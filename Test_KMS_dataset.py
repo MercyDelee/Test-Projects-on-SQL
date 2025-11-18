@@ -2,7 +2,7 @@
 # coding: utf-8
 
 # In[2]:
-
+#Load dataset
 
 import pandas as pd
 
@@ -14,38 +14,38 @@ df.describe()
 
 
 # In[3]:
-
+#Check for missing values
 
 df.isnull().sum()
 
 
 # In[4]:
-
+#Basic sales and profit summary
 
 df[['Sales', 'Profit', 'Order Quantity']].describe()
 
 
 # In[5]:
-
+#Total sales & profit
 
 df['Sales'].sum()
 df['Profit'].sum()
 
 
 # In[6]:
-
+#Sales and profit by region
 
 df.groupby('Region')[['Sales', 'Profit']].sum().sort_values('Sales', ascending=False)
 
 
 # In[7]:
-
+#Most profitable products
 
 df.groupby('Product Name')['Profit'].sum().sort_values(ascending=False).head(10)
 
 
 # In[10]:
-
+#using Matplotlib 
 
 import pandas as pd
 import matplotlib.pyplot as plt
