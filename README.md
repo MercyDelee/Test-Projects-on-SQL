@@ -1,3 +1,3 @@
-# Test-Projects-on-SQL
+# Test-Projects
 
-Case Study 2: Kultra Mega Stores Inventory of DSA Project
+Case Study 2: Kultra Mega Stores Inventory Dataset
